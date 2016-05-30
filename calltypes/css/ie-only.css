@@ -1,0 +1,18 @@
+fieldset, form, legend, .testMessage {
+	display: none;
+}
+
+h1 {
+	color: #ec6f66;
+	margin: 50px 20%!important;
+	text-align: center;
+	font-size: 25px;
+	font-family: monospace;
+	font-weight: normal;
+}
+
+
+img {
+	margin: 0 auto;
+	display: block;
+}

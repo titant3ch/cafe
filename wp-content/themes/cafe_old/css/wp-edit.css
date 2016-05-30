@@ -1,0 +1,26 @@
+/* WP Admin Bar */
+
+#wpadminbar {
+  top: inherit!important;
+  left: inherit!important;
+  bottom: 0!important;
+  left: 25%!important;
+  width: 50%!important;
+  background-color: #4D407A!important;
+}
+
+#wpadminbar .quicklinks a, #wpadminbar .shortlink-input {
+  font-family: monospace;
+  color:white!important;
+}
+
+#wp-admin-bar-wp-logo, #wp-admin-bar-comments {
+  display: none!important;
+}
+
+#wpadminbar .quicklinks a:hover, #wpadminbar .shortlink-input:hover {
+  color:#ec6f66!important;
+  background-color: white!important;
+}
+
+/* End WP Admin Bar */

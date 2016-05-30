@@ -1,0 +1,13 @@
+/* Remove body */
+#header, #header nav, aside, .menu-aside-container, #important, #page {
+	display: none!important;
+}
+
+/* IE Message */
+
+h1 {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	margin: 25% 0;
+}

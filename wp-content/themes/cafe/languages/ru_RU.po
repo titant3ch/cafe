@@ -1,0 +1,248 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cafe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-08 14:58+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: the BestWebSoft team <info@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
+"Language: ru_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../search.php:11
+msgid "Search Results for:"
+msgstr "Результаты поиска для:"
+
+#: ../content.php:29
+#: ../image.php:17
+msgid "Posted on"
+msgstr "Опубликовано"
+
+#: ../content.php:61
+#: ../image.php:83
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../footer.php:19
+msgid "archives"
+msgstr "архивы"
+
+#: ../footer.php:25
+#: ../sidebar.php:30
+msgid "recent comments"
+msgstr "последние комментарии"
+
+#: ../footer.php:45
+#: ../sidebar.php:42
+#: ../functions.php:240
+msgid "on"
+msgstr "на"
+
+#: ../footer.php:52
+#: ../sidebar.php:20
+msgid "recent posts"
+msgstr "последние посты"
+
+#: ../footer.php:59
+#: ../functions.php:331
+msgid "posted by"
+msgstr "опубликовано автором"
+
+#: ../footer.php:59
+#: ../functions.php:331
+msgid "in"
+msgstr "в"
+
+#: ../footer.php:65
+msgid "menu"
+msgstr "меню"
+
+#: ../footer.php:76
+msgid "Designed with love by"
+msgstr "Разработано с любовью командой"
+
+#: ../archive.php:14
+msgid "Daily Archives:"
+msgstr "Архивы за день:"
+
+#: ../archive.php:16
+msgid "Monthly Archives:"
+msgstr "Архивы за месяц:"
+
+#: ../archive.php:18
+msgid "Yearly Archives:"
+msgstr "Архивы за год:"
+
+#: ../archive.php:20
+msgid "Archives"
+msgstr "Архивы"
+
+#: ../comments.php:17
+msgid "One Response to"
+msgstr "Один ответ на"
+
+#: ../comments.php:17
+msgid "responses to"
+msgstr "ответа(ов) на"
+
+#: ../comments.php:20
+#: ../comments.php:28
+msgid "Previous Comments"
+msgstr "Предыдущие комментарии"
+
+#: ../comments.php:21
+#: ../comments.php:29
+msgid "Next Comments"
+msgstr "Следующие комментарии"
+
+#: ../comments.php:35
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: ../404.php:12
+msgid "Sorry, Page not found."
+msgstr "Извините, страница не найдена."
+
+#: ../404.php:16
+#: ../content-none.php:14
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно, поиск сможет помочь."
+
+#: ../image.php:88
+msgid "Previous image"
+msgstr "Предыдущее изображение"
+
+#: ../image.php:89
+msgid "Next image"
+msgstr "Следующее изображение"
+
+#: ../content-none.php:10
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: ../category.php:13
+msgid "Posts in Category:"
+msgstr "Посты в категории:"
+
+#: ../tag.php:13
+msgid "Posts with Tag:"
+msgstr "Посты с тегом:"
+
+#: ../functions.php:70
+msgid "Primary menu in header"
+msgstr "Основное меню в заголовке сайта"
+
+#: ../functions.php:71
+msgid "Secondary menu in footer"
+msgstr "Дополнительное меню в подвале сайта (футере)"
+
+#: ../functions.php:125
+msgid "Choose file..."
+msgstr "Выберите файл..."
+
+#: ../functions.php:126
+msgid "File is not selected."
+msgstr "Файл не выбран."
+
+#: ../functions.php:149
+msgid "Page"
+msgstr "Страница"
+
+#: ../functions.php:163
+msgid "Your site&#8217;s most recent comments with excerpts."
+msgstr "Последние комментарии на Вашем сайте с выдержкой."
+
+#: ../functions.php:165
+msgid "Recent Comments with excerpt"
+msgstr "Последние комментарии с выдержкой."
+
+#: ../functions.php:211
+msgid "Recent Comments"
+msgstr "Последние комментарии"
+
+#: ../functions.php:270
+#: ../functions.php:370
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: ../functions.php:272
+msgid "Number of comments to show:"
+msgstr "Выводить комментариев:"
+
+#: ../functions.php:283
+msgid "Your site&#8217;s most recent posts with author and category."
+msgstr "Последние посты на Вашем сайте с информацией об авторе и категории."
+
+#: ../functions.php:285
+msgid "Recent Posts (author and category)"
+msgstr "Последние посты (автор и категория)"
+
+#: ../functions.php:308
+msgid "Recent Posts"
+msgstr "Последние посты"
+
+#: ../functions.php:372
+msgid "Number of posts to show:"
+msgstr "Выводить постов:"
+
+#: ../functions.php:375
+msgid "Display post date?"
+msgstr "Отображать дату поста?"
+
+#: ../functions.php:388
+msgid "Main Widget Area"
+msgstr "Основная область виджетов"
+
+#: ../functions.php:390
+msgid "Appears on posts and pages in the sidebar."
+msgstr "Отображается на страницах и постах в сайдбаре."
+
+#: ../functions.php:398
+msgid "Secondary Widget Area"
+msgstr "Дополнительная область виджетов"
+
+#: ../functions.php:400
+msgid "Appears in the footer section of the site."
+msgstr "Отображается в области подвала сайта."
+
+#: ../functions.php:437
+msgid "Older posts"
+msgstr "Предыдущие посты"
+
+#: ../functions.php:438
+msgid "Newer posts"
+msgstr "Новые посты"
+
+#: ../functions.php:454
+msgid "Category:"
+msgstr "Категория:"
+
+#: ../functions.php:458
+msgid "Tag: "
+msgstr "Тег:"
+
+#: ../functions.php:460
+msgid "Archive for:"
+msgstr "Архив за:"
+
+#: ../functions.php:473
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: ../searchform.php:8
+msgid "Enter your searchword here"
+msgstr "Что нужно найти?"
+
+#~ msgid "of"
+#~ msgstr "-"
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+

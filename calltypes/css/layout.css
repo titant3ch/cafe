@@ -1,0 +1,507 @@
+body {
+  margin: 0 0;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #0971B2 ;
+    /*border-radius: 10px;*/
+    /*border-left: 1px solid #ccc;*/
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    /*border-radius: 10px;*/
+}
+
+.bgstuff {
+  position: relative;
+}
+
+.bgstuff {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4D407A;
+  width: 100%;
+  height: 100%;
+  opacity : 0.7;
+  z-index: -1;
+}
+
+fieldset {
+  background-color: white;
+  margin: 30px auto;
+  padding: 0 0 20px 50px;
+  display: block;
+  width: 500px;
+  opacity : 1;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0 4px 8px -4px #999;
+  -moz-box-shadow: 0 4px 8px -4px #999;
+  box-shadow: 0 4px 8px -4px #999;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/*fieldset:hover {
+  -moz-transform: scale(1.0, 1.0);
+  -ms-transform: scale(1.03, 1.03);
+  -webkit-transform: scale(1.03, 1.03);
+  transform: scale(1.03, 1.03);
+}*/
+
+legend {
+  text-align: center;
+  margin: 50px 0 25px 0;
+  font-family: Oxygen;
+  font-weight: 100;
+  font-size: 2rem;
+  color: rgba(77, 64, 122, .9);
+}
+
+form {
+  padding: 20px;
+}
+
+h2 {
+  font-family: Oxygen;
+  font-weight: 100;
+  font-size: 1.5rem;
+  float: left;
+  width: 110px;
+  clear: left;
+  color: rgba(77, 64, 122, .9);
+}
+
+section p {
+  float: left;
+  margin-top: 20px;
+  margin-left: -20px;
+  color: rgba(77, 64, 122, .9);
+  font-family: oxygen;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+textarea.textarea {
+  float: left;
+  margin: 15px;
+  resize: none;
+  width: 260px;
+  height: 17px;
+  padding: 15px 12px;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0 4px 8px -4px #999;
+  -moz-box-shadow: 0 4px 8px -4px #999;
+  box-shadow: 0 4px 8px -4px #999;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+textarea.textarea::-webkit-input-placeholder {
+  text-align: center;
+}
+
+textarea.time {
+  width: 40px;
+  height: 22px;
+  padding: 10px;
+  margin-right: 40px;
+  font-size: 1.1rem;
+  font-family: oxygen;
+  text-align: center;
+  border: 1px solid #ececec;
+  color: #999;
+  -webkit-box-shadow: 0 4px 8px -4px #999;
+  -moz-box-shadow: 0 4px 8px -4px #999;
+  box-shadow: 0 4px 8px -4px #999;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+textarea:focus {
+  outline-color: rgba(34,133,162,0.7);
+}
+
+select {
+  margin: 26px 15px;
+  float: left;
+  border: 1px solid #ececec;
+  padding: 10px;
+  font-family: oxygen;
+  font-size: 1rem;
+  color: #999;
+  -webkit-box-shadow: 0 4px 8px -4px #999;
+  -moz-box-shadow: 0 4px 8px -4px #999;
+  box-shadow: 0 4px 8px -4px #999;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+select:focus {
+  outline-color: rgba(34,133,162,0.7);
+}
+
+input[type="submit"] {
+  float: none;
+  margin: 290px auto 0 -72px;
+  width: 80px;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  padding: 5px;
+  border: 2px solid rgba(77, 64, 122, .5);
+  color: rgba(77, 64, 122, .9);
+  cursor: pointer;
+  /* border-top-width: 0px; */
+  box-shadow: 0 4px 10px -4px #999;
+  background-color: white;
+  font-family: oxygen;
+  webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 4px 20px -4px #999;
+  border: 2px solid rgba(77, 64, 122, .5);
+  color: white;
+  background-color: rgba(77, 64, 122, .9);
+  webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.testMessage {
+  margin: 100px auto 0 auto;
+  display: block;
+  /*width: 500px;*/
+  padding: 20px 0;
+  background-color: rgba(77, 64, 122, .9);
+  -webkit-box-shadow: 0 -3px 56px 3px #999;
+  -moz-box-shadow: 0 -3px 56px 3px #999;
+  box-shadow: 0 -3px 56px 3px #999;
+}
+
+.testMessage h3 {
+  text-align: center;
+  font-family: oxygen;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.testMessage table {
+  margin: 0 auto;
+  width: 500px;
+  /*border: 1px solid white;*/
+  font-family: oxygen;
+  font-weight: 100;
+  color: white;
+}
+
+.testMessage table > tbody > tr:nth-child(1) > th {
+  border-bottom: 1px solid white;
+  font-size: 1.3rem;
+  /*font-weight: 100;*/
+}
+
+.testMessage > table > tbody > tr > td {
+  padding: 8px 10px;
+}
+
+.testMessage > table > tbody > tr:nth-child(odd) > td {
+  background-color: white;
+  color: #0971B2;
+}
+
+body > div > table > tbody > tr > td:nth-child(1), body > div > table > tbody > tr > td:nth-child(2) {
+  text-align: center;
+}
+
+.testMessage h4 {
+  font-family: oxygen;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  margin-left: 50px;
+}
+
+
+/* Results */
+
+body#results {
+  background-color: #0971B2;
+}
+
+#results {
+  /*margin: 100px auto 0 auto;*/
+  display: block;
+  /*width: 500px;*/
+  padding: 20px 0;
+  font-family: oxygen;
+}
+
+#results h3 {
+  text-align: center;
+  font-family: oxygen;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: rgba(77, 64, 122, .9);
+  margin-bottom: 80px;
+}
+
+#results table {
+  margin: 0 auto;
+  width: 700px;
+  /*border: 1px solid white;*/
+  font-family: oxygen;
+  font-weight: 100;
+  color: rgba(77, 64, 122, .9);
+}
+
+#results table > tbody > tr:nth-child(1) > th {
+  border-bottom: 1px solid #0971B2;
+  font-size: 1.3rem;
+  /*font-weight: 100;*/
+}
+
+#results > table > tbody > tr > td {
+  padding: 8px 10px;
+}
+
+#results > table > tbody > tr:nth-child(odd) > td {
+  background-color: rgba(77, 64, 122, .9);
+  color: white;
+}
+
+body > div > table > tbody > tr > td:nth-child(1), body > div > table > tbody > tr > td:nth-child(2) {
+  text-align: center;
+}
+
+#results h4 {
+  font-family: oxygen;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: rgba(77, 64, 122, .9);
+  margin-left: 50px;
+}
+
+/* Create Button */
+
+#button > p:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 147px;
+}
+
+#button > p:nth-child(1) > a{
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  color: #0971B2;
+  transition: color .7s ease, background-color 1s ease;
+}
+
+#button > p:nth-child(1) > a:hover {
+  background-color: #0971B2;
+  color: white;
+}
+
+/* Dowload Button */
+
+#button > p:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 45px;
+}
+
+#button > p:nth-child(2) > a{
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  color: #0971B2;
+  transition: color .7s ease, background-color 1s ease;
+}
+
+#button > p:nth-child(2) > a:hover {
+  background-color: #0971B2;
+  color: white
+}
+
+/* Clear Button */
+
+#button > p:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+#button > p:nth-child(3) > a{
+  padding: 6px 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid rgba(196, 35, 44, .3);
+  border-radius: 50%;
+  color: #0971B2;
+  transition: color .7s ease, background-color 1s ease;
+}
+
+#button > p:nth-child(3) > a:hover {
+  background-color: #C4232C;
+  color: white;
+}
+
+/* Home Button */
+
+#button > p:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  margin: 0 0;
+}
+
+#button > p:nth-child(4) > a > img{
+  padding: 6px 12px;
+  font-weight: bold;
+  color: #0971B2;
+  transition: color .7s ease, background-color 1s ease;
+  width: 50px;
+}
+
+/* Off Page */
+
+body#offPage {
+  background-color: #0971B2;
+}
+
+section#offMessage p {
+  font-family: oxygen;
+  color: white;
+  font-size: 1.2rem;
+  margin: 25%;
+  line-height: 40px;
+}
+
+/* TEST NAV */
+
+/* The necessities */
+.onclick-menu {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.onclick-menu:before {
+  content: "Menu";
+  color: white;
+  font-size: 1.2rem;
+}
+.onclick-menu:focus {
+  pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.onclick-menu-content {
+  pointer-events: auto;
+  position: absolute;
+  z-index: 1;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+.onclick-menu.no-pointer-events {
+  pointer-events: auto !important;
+}
+
+.onclick-menu.no-visibility .onclick-menu-content {
+  visibility: visible !important;
+  display: none;
+}
+
+.onclick-menu.no-visibility:focus .onclick-menu-content {
+  display: block;
+}
+
+.onclick-menu.no-opacity .onclick-menu-content {
+  opacity: 1 !important;
+}
+
+/*
+Eye candy 
+( colors courtesy of https://kuler.adobe.com/try-color-theme-3350110 )
+*/
+.onclick-menu {
+  padding: 0;
+  margin: 0 0 1em 1rem;
+  outline: 0;
+}
+.onclick-menu:before {
+  padding: 5px 10px;
+  background-color: rgba(77, 64, 122, .9);
+}
+.onclick-menu-content {
+  background-color: rgba(77, 64, 122, .9);
+  width: 8rem;
+  margin-top: 10px;
+  margin-left: 0;
+  padding: 10px;
+}
+
+/* arrow for the expanding part */
+/*.onclick-menu-content:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #364656;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  position: absolute;
+  top: -10px;
+}*/
+
+.onclick-menu-content li {
+  color: #f2f5e9;
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+.onclick-menu-content li a {
+  color:white;
+}
+
+/* style the buttons */
+.onclick-menu-content button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  outline: 0;
+  cursor: pointer;
+  font-family: oxygen;
+  font-size: 1rem;
+  /*border-bottom: 1px solid white;*/
+  padding: 5px 0;
+}
+.onclick-menu-content button:hover {
+  color: #ff8c31;
+}
+
+/* Codepen stuff */
+.onclick-menu {
+
+  text-align: left;
+}

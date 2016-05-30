@@ -1,0 +1,244 @@
+/*
+ * This file contains specific styles for IE lt 9
+ */
+
+
+/* header */
+
+.cafe-site-header {
+	behavior:url(../js/PIE.htc);
+	margin-bottom: 24px;
+}
+
+#cafe-main-menu {
+	behavior:url(../js/PIE.htc);
+	zoom: 1;
+}
+
+.cafe-main-navigation .sub-menu,
+.cafe-main-navigation .children {
+	behavior:url(../js/PIE.htc);
+}
+
+#cafe-main-menu .cafe-main-navigation li li a,
+#cafe-main-menu li li a,
+#cafe-main-menu li li:hover a,
+#cafe-main-menu li li.current_page_item a {
+	behavior:url(../js/PIE.htc);
+	border-bottom-width: 0;
+	border-bottom: none;
+}
+
+/* content for IE 7 */
+.cafe-clearfix {
+	zoom: expression( this.runtimeStyle.zoom="1", 
+		this.appendChild( document.createElement("i") ).className="ie-after" );
+}
+
+.cafe-clearfix i.ie-after {
+	padding-bottom: 0px;
+	zoom: expression( this.runtimeStyle['zoom'] = '0',
+		this.innerHTML = '');
+}
+
+.wrapper {
+	padding-bottom: 30px;
+}
+
+/* sidebar */
+
+.screen-reader-text,
+.widget_search form input[type="text"] {
+	behavior:url(../js/PIE.htc);
+}
+
+.widget_search form input[type="submit"] {
+	behavior:url(../js/PIE.htc);
+}
+
+.widget .cafe-select {
+	behavior:url(../js/PIE.htc);
+}
+
+.widget form,
+.widget form div {
+	height: auto;
+}
+
+.widget form div {
+	position: relative;
+	zoom: 1;
+}
+
+.widget .screen-reader-text form div {
+	position: relative;
+	top: 0;
+}
+
+.widget_calendar a {
+	font-family: 'open_sansbold', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px;
+	color: #fff;
+}
+
+/* content */
+
+.post,
+.page,
+#cafe-content {
+	behavior:url(../js/PIE.htc);
+}
+
+.entry-meta .tag-list,
+.entry-meta .tag-list + .edit-link,
+.entry-meta .comments-link + a[href="#wrapper"],
+.entry-meta .top-link {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+	behavior:url(../js/PIE.htc);
+}
+
+select {
+	behavior:url(../js/PIE.htc);
+}
+
+div.cafe-select {
+	behavior:url(../js/PIE.htc);
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+.cafe-select .cafe-select-block {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+.cafe-radio {
+	behavior:url(../js/PIE.htc);
+}
+
+.cafe-radio-custom,
+.cafe-checkbox-custom {
+	filter: alpha(opacity=0);
+}
+
+.cafe-fake-radio.disabled,
+.cafe-cafe-fake-checkbox.disabled,
+.cafe-fake-radio:hover,
+.cafe-cafe-fake-checkbox:hover {
+	filter: alpha(Opacity=50); /*opacity for IE*/
+}
+
+.cafe-fake-radio.cafe-selected:hover,
+.cafe-cafe-fake-checkbox.cafe-selected:hover {
+	filter: alpha(Opacity=100); /*opacity for IE*/
+}
+
+.cafe-radio-item-container,
+.cafe-checkbox-item-container {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+.cafe-upload-file {
+	/*behavior:url(../js/PIE.htc);*/ /* .cafe-upload-file-input works uncorrect, off for pretty */
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+.cafe-upload-file-input {
+	/*behavior:url(../js/PIE.htc);*/ /* works uncorrect */
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+.cafe-upload-file-status {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+input[type="reset"],
+input[type="submit"] {
+	behavior:url(../js/PIE.htc);
+}
+
+.cafe-tags {
+	margin-bottom: 15px;
+}
+
+.cafe-nav-link a {
+	color: #ABABAB;
+}
+
+/* content for IE 7 */
+
+.entry-meta hr {
+	margin: 0!important;
+}
+
+#cafe-content .cafe-nav-single .cafe-nav-previous,
+#cafe-content .cafe-nav-single .cafe-nav-next {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+article.paging-nav .nav-links .cafe-nav-previous + .cafe-nav-next,
+article.paging-nav .nav-links .cafe-nav-previous {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
+
+.cafe-main-site-container footer {
+	/*behavior:url(../js/PIE.htc);*/ /* coomented, because PIE works uncorrect */
+}
+
+.read_more {
+	margin-right: 0 !important;
+}
+
+.portfolio_short_content {
+	width: 100% !important;
+}
+
+.portfolio_content .portfolio_thumb img {
+	margin-bottom: 10px;
+}
+
+article.paging-nav .nav-links .cafe-nav-previous,
+#cafe-content .cafe-nav-single .cafe-nav-previous,
+.cafe-upload-file-input {
+	float: left;
+}
+
+#cafe-content .gallery_box_single .gallery .gllr_image_block,
+.entry-content .gallery_box_single .gallery .gllr_image_block {
+	margin: 5px 6px 0 0 !important;
+}
+
+label,
+.cptch_block {
+	vertical-align: middle !important;
+}
+
+#fcbk_share {
+	margin-top: 10px;
+}
+
+/* shares */
+
+.fcbk_button,
+.fcbk_button a,
+.fcbk_like,
+#fcbk_share,
+.gglplsn_share,
+.twttr_button {
+	zoom: 1; /* inline-block for IE 6-7 */
+	*display: inline; /* inline-block for IE 6-7 */
+}
