@@ -1,1 +1,1 @@
-wp-content/uploads
+# Cafe Chronicle Backup
