@@ -1,0 +1,374 @@
+body { 
+	font: 14px Georgia, serif; 
+  background-color: #ececec;
+}
+
+#page-wrap { 
+	width: 800px; 
+	margin: 0 auto; 
+}
+
+h1 { 
+	margin: 25px 0;
+	font: 20px Oxygen, Georgia, Serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+h2 { 
+	font: 20px Oxygen, Georgia, Serif;
+	letter-spacing: 2.5px;
+}
+
+hr {
+    margin: 2rem auto 3rem auto;
+    border: 2px solid rgba(207, 68, 10, .9);
+    width: 12rem;
+}
+
+#quizie input {
+    vertical-align: middle;
+}
+
+#quizie ol {
+   margin: 0 0 10px 20px;
+   font-size: 20px;
+}
+
+#quizie ol li {
+  margin: 0 0 20px 0;
+  padding: 20px 40px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px -4px #999;
+  -moz-box-shadow: 0 4px 8px -4px #999;
+  box-shadow: 0 4px 8px -4px #999;
+}
+
+#quizie ol li div {
+   padding: 4px 0;
+   font-size: 15px;
+}
+
+#quizie ol li div label {
+   font-family: Oxygen, Georgia, serif;
+}
+
+#quizie h3 {
+  font-family: oxygen, serif;
+   font-size: 17px;
+   font-weight: 500;
+   margin: 0 0 25px 0;
+   text-align: left;
+}
+
+input[type="radio"] {
+    /*background-color: #ddd;*/
+   /* background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+                      -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);*/
+    border-radius: 5px;
+    /*box-shadow: inset 0 1px 1px hsla(0,0%,100%,.8),
+                0 0 0 1px hsla(0,0%,0%,.6),
+                0 2px 3px hsla(0,0%,0%,.6),
+                0 4px 3px hsla(0,0%,0%,.4),
+                0 6px 6px hsla(0,0%,0%,.2),
+                0 10px 6px hsla(0,0%,0%,.2);*/
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+input[type="radio"]:after {
+    background-color: #ececec;
+    border-radius: 25px;
+    content: '';
+    display: block;
+    height: 15px;
+    left: 4px;
+    position: relative;
+    /* top: 0px; */
+    width: 16px;
+}
+
+input[type="radio"]:checked:after {
+    /*background-color: #f66;*/
+    box-shadow: inset 0 0 0 15px rgba(135, 9, 176, 1),
+                inset 0 2px 2px rgba(135, 9, 176, 1),
+                0 1px 1px rgba(135, 9, 176, 1),
+                0 0 2px 2px rgba(135, 9, 176, 1);
+    color: red;
+}
+
+input#submitAnswers  {
+    vertical-align: middle;
+    color: #4D407A;
+    padding: 13px 20px;
+    border: 1px solid #ececec;
+    background-color: white;
+    border-radius: 2px;
+    font-family: oxygen;
+    font-weight: normal;
+    font-size: 1rem;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+    text-decoration: none;
+    margin: 50px auto;
+    display: block;
+}
+
+input#submitAnswers:hover {
+    background-color: #4D407A;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#grade {
+    font: 44px Oxygen, Georgia, Serif;
+    text-align: center;
+}
+
+#gMessage {
+  font: 44px Oxygen, Georgia, Serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Summary */
+
+h3 {
+    font: 30px Oxygen, Georgia, Serif;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: rgba(207, 68, 10, .9);
+}
+
+table {
+    margin: 0 auto;
+    width: 730px;
+    /* border: 1px solid white; */
+    font-family: oxygen;
+    font-weight: 100;
+    color: rgba(207, 68, 10, .9);
+}
+
+table > tbody > tr:nth-child(1) > th {
+    border-bottom: 1px solid rgba(207, 68, 10, .9);
+    font-size: 1.3rem;
+    /* font-weight: 100; */
+}
+
+table > tbody > tr > td {
+    padding: 8px 10px;
+}
+
+table > tbody > tr:nth-child(odd) > td {
+    background-color: rgba(207, 68, 10, .9);
+    color: white;
+}
+
+/* The necessities */
+.onclick-menu {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.onclick-menu:before {
+  content: "Menu";
+  color: white;
+  font: 20px Oxygen, Georgia, Serif;
+}
+.onclick-menu:focus {
+  pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.onclick-menu-content {
+  pointer-events: auto;
+  position: absolute;
+  z-index: 1;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+.onclick-menu.no-pointer-events {
+  pointer-events: auto !important;
+}
+
+.onclick-menu.no-visibility .onclick-menu-content {
+  visibility: visible !important;
+  display: none;
+}
+
+.onclick-menu.no-visibility:focus .onclick-menu-content {
+  display: block;
+}
+
+.onclick-menu.no-opacity .onclick-menu-content {
+  opacity: 1 !important;
+}
+
+/*
+Eye candy 
+( colors courtesy of https://kuler.adobe.com/try-color-theme-3350110 )
+*/
+.onclick-menu {
+  padding: 0;
+  margin: 1rem 0 1em 1rem;
+  outline: 0;
+}
+.onclick-menu:before {
+  padding: 5px 10px;
+  background-color: rgba(207, 68, 10, .9);
+}
+.onclick-menu-content {
+  background-color: rgba(207, 68, 10, .9);
+  width: 8rem;
+  margin-top: 10px;
+  margin-left: 0;
+  padding: 10px;
+}
+
+/* arrow for the expanding part */
+/*.onclick-menu-content:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #364656;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  position: absolute;
+  top: -10px;
+}*/
+
+.onclick-menu-content li {
+  color: #f2f5e9;
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+.onclick-menu-content li a {
+  color:white;
+}
+
+/* style the buttons */
+.onclick-menu-content button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  outline: 0;
+  cursor: pointer;
+  font-family: oxygen;
+  font-size: 1rem;
+  /*border-bottom: 1px solid white;*/
+  padding: 5px 0;
+}
+.onclick-menu-content button:hover {
+  color: #ff8c31;
+}
+
+/* Codepen stuff */
+.onclick-menu {
+
+  text-align: left;
+}
+
+/* Fonts */
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(http://fonts.gstatic.com/s/oxygen/v5/-1odZCVpKpOs9pNLq607fhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(http://fonts.gstatic.com/s/oxygen/v5/AwBqWF2kjhlybWamaKMPcVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(http://fonts.gstatic.com/s/oxygen/v5/IIPDrwV5KNJo5-LaFlLy2fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(http://fonts.gstatic.com/s/oxygen/v5/78wGxsHfFBzG7bRkpfRnCQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://fonts.gstatic.com/s/oxygen/v5/fSUtikcZd7PHZK0t2hzTeRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://fonts.gstatic.com/s/oxygen/v5/yVHpdQrmTj9Kax1tmFSx2ltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(http://fonts.gstatic.com/s/raleway/v9/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon/icomoon.eot');
+  src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

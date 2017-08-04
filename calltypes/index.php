@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="http://ausrcwa230/dotcom/calltypes/css/ie-only.css" type="text/css" />
   <![endif]--> 
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>.com Call Types</title>
+  <title>Cafe | Call Types</title>
   <link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
   <link rel="icon" type="image/gif" href="img/fx-favicon.ico">
@@ -15,6 +15,18 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
+
+  <?php
+    // Setting TimeZone
+    date_default_timezone_set('America/Chicago');
+
+    // Agent Data
+    require "inc/agent.php";
+
+    error_reporting(0);
+
+    echo $user;
+  ?>
 
 <fieldset>
 
@@ -32,14 +44,13 @@
           <h2>LOB</h2>
 
           <select name="lob">
+            <option value="cafe">Cafe</option>
             <option value="dotcom">.com</option>
-            <option value="domestic">Domestic</option>
-            <option value="load">Load Issues</option>
           </select>
         </section>
 
         <section>
-          <h2>Message</h2>
+          <h2>What's your call?</h2>
 
           <textarea name="message" class="textarea" maxlength="50" placeholder="Character Count is set to 50" required></textarea>
         </section>
@@ -53,16 +64,18 @@
 
         <?php
 
+          require "inc/usertest.php";
+          
           error_reporting(E_ALL ^ E_DEPRECATED);
 
-          $con = mysql_connect("127.0.0.1", "root", "Fedex123");
+          $con = mysql_connect("127.0.0.1", "root", "root");
 
           if (!$con) {
             $noDatabase = true;
             die('Could not connect: ' . mysql_error());
           }
 
-          $noDatabase = !mysql_select_db("creeper", $con);
+          $noDatabase = !mysql_select_db("manolo", $con);
 
           $query = "SELECT * FROM CallTypes ORDER BY calltime * 1 DESC";
           $result = mysql_query($query);

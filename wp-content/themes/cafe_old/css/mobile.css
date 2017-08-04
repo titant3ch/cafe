@@ -1,6 +1,6 @@
 /* Screen Resolution */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1275px) {
   header h1 {
     display: none;
   }
@@ -12,6 +12,7 @@
   header nav {
     text-align: center;
     margin-top: 120px;
+    padding: 15px;
     position: relative;
     top: 0;
     right: 0;

@@ -6,7 +6,7 @@ body::-webkit-scrollbar {
     width: 8px;
 }
 body::-webkit-scrollbar-track {
-    background-color: rgba(207, 68, 10, .9);
+    background-color: #0971B2 ;
     /*border-radius: 10px;*/
     /*border-left: 1px solid #ccc;*/
 }
@@ -35,11 +35,11 @@ body::-webkit-scrollbar-thumb {
 fieldset {
   background-color: white;
   margin: 30px auto;
-  padding: 0 0 20px 50px;
+  padding: 0 0 20px 0;
   display: block;
-  width: 570px;
+  width: 680px;
   opacity : 1;
-  border: 1px solid rgba(207, 68, 10, .9);
+  border: 1px solid #ececec;
   -webkit-box-shadow: 0 4px 8px -4px #999;
   -moz-box-shadow: 0 4px 8px -4px #999;
   box-shadow: 0 4px 8px -4px #999;
@@ -59,7 +59,7 @@ legend {
   font-family: Oxygen;
   font-weight: 100;
   font-size: 2rem;
-  color: rgba(207, 68, 10, .9);
+  color: rgba(34,133,162,1);
 }
 
 form {
@@ -71,28 +71,21 @@ h2 {
   font-weight: 100;
   font-size: 1.5rem;
   float: left;
-  width: 185px;
+  width: 150px;
   clear: left;
-  color: rgba(207, 68, 10, .9);
+  color: rgba(34,133,162,1);
 }
 
-section p {
-  float: left;
-  margin-top: 20px;
-  margin-left: -20px;
-  color: rgba(77, 64, 122, .9);
-  font-family: oxygen;
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-
-textarea.textarea {
+textarea.textarea  {
   float: left;
   margin: 15px;
   resize: none;
-  width: 260px;
-  height: 17px;
-  padding: 15px 12px;
+  width: 384px;
+  height: 20px;
+  font-family: oxygen;
+  text-align: center;
+  font-size: 16px;
+  padding: 21px 17px;
   border: 1px solid #ececec;
   -webkit-box-shadow: 0 4px 8px -4px #999;
   -moz-box-shadow: 0 4px 8px -4px #999;
@@ -121,7 +114,7 @@ textarea.time {
 }
 
 textarea:focus {
-  outline-color: rgba(207, 68, 10, .9);
+  outline-color: rgba(34,133,162,0.7);
 }
 
 select {
@@ -139,20 +132,20 @@ select {
 }
 
 select:focus {
-  outline-color: rgba(207, 68, 10, .9);
+  outline-color: rgba(34,133,162,0.7);
 }
 
 input[type="submit"] {
   float: none;
-  margin: 290px auto 0 -140px;
+  margin: 400px auto 0 10px;
   width: 80px;
   text-align: center;
   font-size: 1em;
   letter-spacing: 1px;
   border-radius: 4px;
   padding: 5px;
-  border: 2px solid rgba(207, 68, 10, .9);
-  color: rgba(207, 68, 10, .9);
+  border: 2px solid rgba(9,113,178,.5);
+  color: #0971B2;
   cursor: pointer;
   /* border-top-width: 0px; */
   box-shadow: 0 4px 10px -4px #999;
@@ -167,9 +160,9 @@ input[type="submit"] {
 
 input[type=submit]:hover {
   box-shadow: 0 4px 20px -4px #999;
-  border: 2px solid rgba(207, 68, 10, .9);
+  border: 2px solid rgba(9,113,178,.5);
   color: white;
-  background-color: rgba(207, 68, 10, .9);
+  background-color: rgba(9,113,178,.8);
   webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -182,7 +175,7 @@ input[type=submit]:hover {
   display: block;
   /*width: 500px;*/
   padding: 20px 0;
-  background-color: rgba(207, 68, 10, .9);
+  background-color: #0971B2;
   -webkit-box-shadow: 0 -3px 56px 3px #999;
   -moz-box-shadow: 0 -3px 56px 3px #999;
   box-shadow: 0 -3px 56px 3px #999;
@@ -199,7 +192,7 @@ input[type=submit]:hover {
 
 .testMessage table {
   margin: 0 auto;
-  width: 600px;
+  width: 500px;
   /*border: 1px solid white;*/
   font-family: oxygen;
   font-weight: 100;
@@ -218,7 +211,7 @@ input[type=submit]:hover {
 
 .testMessage > table > tbody > tr:nth-child(odd) > td {
   background-color: white;
-  color: black;
+  color: #0971B2;
 }
 
 body > div > table > tbody > tr > td:nth-child(1), body > div > table > tbody > tr > td:nth-child(2) {
@@ -253,21 +246,21 @@ body#results {
   font-family: oxygen;
   font-size: 1.8rem;
   font-weight: 100;
-  color: rgba(207, 68, 10, .9);
+  color: #0971B2;
   margin-bottom: 80px;
 }
 
 #results table {
   margin: 0 auto;
-  width: 800px;
+  width: 700px;
   /*border: 1px solid white;*/
   font-family: oxygen;
   font-weight: 100;
-  color: rgba(207, 68, 10, .9);
+  color: #0971B2;
 }
 
 #results table > tbody > tr:nth-child(1) > th {
-  border-bottom: 1px solid rgba(207, 68, 10, .9);
+  border-bottom: 1px solid #0971B2;
   font-size: 1.3rem;
   /*font-weight: 100;*/
 }
@@ -277,7 +270,7 @@ body#results {
 }
 
 #results > table > tbody > tr:nth-child(odd) > td {
-  background-color: rgba(207, 68, 10, .9);
+  background-color: #0971B2;
   color: white;
 }
 
@@ -289,7 +282,7 @@ body > div > table > tbody > tr > td:nth-child(1), body > div > table > tbody > 
   font-family: oxygen;
   font-size: 1.5rem;
   font-weight: 100;
-  color: rgba(207, 68, 10, .9);
+  color: #0971B2;
   margin-left: 50px;
 }
 
@@ -387,8 +380,12 @@ section#offMessage p {
   font-family: oxygen;
   color: white;
   font-size: 1.2rem;
-  margin: 25%;
+  margin: 20%;
   line-height: 40px;
+}
+
+body > fieldset > form > section:nth-child(2) > div:nth-child(2) {
+    float: right;
 }
 
 /* TEST NAV */
@@ -451,10 +448,10 @@ Eye candy
 }
 .onclick-menu:before {
   padding: 5px 10px;
-  background-color: rgba(207, 68, 10, .9);
+  background-color: #0971B2;
 }
 .onclick-menu-content {
-  background-color: rgba(207, 68, 10, .9);
+  background-color: #0971B2;
   width: 8rem;
   margin-top: 10px;
   margin-left: 0;
@@ -504,4 +501,13 @@ Eye candy
 .onclick-menu {
 
   text-align: left;
+}
+
+/* Error Message */
+
+p#ErrNote {
+    margin: 2% 5%;
+    font-family: oxygen;
+    color: red;
+    line-height: 30px;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0;url=http://<?php echo $_SERVER['SERVER_NAME'] ?>/cafe/calltypes/view">
+  <meta http-equiv="refresh" content="0;url=http://ausrcwa230/cafe/quiz/admin/summary.php">
 </head>
 
 <body>
@@ -17,9 +17,9 @@ $noDatabase = true;
 die('Could not connect: ' . mysql_error());
 }
 
-$noDatabase = !mysql_select_db("manolo", $con);
+$noDatabase = !mysql_select_db("qcafe", $con);
 
-$query = "DROP TABLE calltypes";
+$query = "DROP TABLE Results";
 
 $result = mysql_query($query);
 

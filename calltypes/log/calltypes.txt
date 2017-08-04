@@ -1,13 +1,12 @@
-Dotcom-Call Types: test/
+Below are the calls that have been coming in for Cafe and Dotcom
 
-Dotcom-AHT Drivers: test/
+Cafe- Clean Load/intl. shipment/printer install/dg shipment/product key/third party accounts/MPS/create a label DCOM/product key/product key/Walmart return label lost in cyberspace/comp crashed. I NEED A KEY!/how do you back up and restore addresses./incorrect prices/product key/printer install/dg shipment/client/server connection/
+Dotcom- intl shipment/password reset/login/intl shipment/track a package/login reset and question ans./change admin on passkey/One time shipment label/process shipment/
 
-Dotcom-High Volume Types: 
+AHT Drivers:  the call types that are driving the AHT up
+Cafe: Clean Load/40 min/dg shipment/27 min/printer install/25 min/incorrect prices/25 min/client/server connection/25 min/intl. shipment/18 min/
+Dotcom: intl shipment/35 min/login/15 min/login reset and question ans./15 min/One time shipment label/9 min/process shipment/9 min/password reset/8 min/
 
-Domestic-Call Types: test/
-
-Domestic-AHT Drivers: test/
-
-Domestic-High Volume Types: 
-
-Load Issues: fiang iernignriejgrnegi reiongri/
+High Volume Types:  the call types that are coming in most
+Cafe- 
+Dotcom- 

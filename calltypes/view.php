@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>.com Call Types : View</title>
+  <title>Cafe | Call Types : View</title>
 
   <link rel="stylesheet" type="text/css" href="css/fonts.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/layout.css" media="all" />
@@ -17,22 +17,27 @@
 <div tabindex="0" class="onclick-menu">
     <ul class="onclick-menu-content">
         <li>
-          <a href="http://ausrcwa230/dotcom/calltypes" title="Home Page">
+          <a href="http://<?php echo $_SERVER['SERVER_NAME'] ?>/cafe/calltypes" title="Home Page">
             <button>Home</button>
           </a>
         </li>
         <li>
-          <a href="http://ausrcwa230/dotcom/calltypes/inc/file.php" title="Create File">
+          <a href="http://<?php echo $_SERVER['SERVER_NAME'] ?>/cafe/calltypes/inc/file.php" title="Create File">
             <button>Create File</button>
           </a>
         </li>
         <li>
-          <a href="http://ausrcwa230/dotcom/calltypes/log/calltypes.txt" title="Download" download>
+          <a href="http://<?php echo $_SERVER['SERVER_NAME'] ?>/cafe/calltypes/inc/agent_file.php" title="Create File">
+            <button>Agent File</button>
+          </a>
+        </li>
+        <li>
+          <a href="http://<?php echo $_SERVER['SERVER_NAME'] ?>/cafe/calltypes/log/calltypes.txt" title="Download" download>
             <button>Download</button>
           </a>
         </li>
         <li>
-          <a href="http://ausrcwa230/dotcom/calltypes/inc/cleanload.php" title="Delete Database">
+          <a href="http://<?php echo $_SERVER['SERVER_NAME'] ?>/cafe/calltypes/inc/cleanload.php" title="Delete Database">
             <button>Clear Database</button>
           </a>
         </li>
@@ -40,17 +45,38 @@
 </div>
 
 <?php
+  
+  require "inc/usertest.php";
 
+  // Lead Check
+  $leads = array(
+    'rhagemann',
+    'knesbitt',
+    'jemcavin',
+    'chmoran',
+    'tkalinec'
+  );
+  
+  
+  if (!in_array(strtolower($user), $leads)) {
+    header("Location: http://ausws1c0292-2/cafe/calltypes");
+  }
+
+  // Setting TimeZone
+  date_default_timezone_set('America/Chicago');
+
+  
+  // Remove Error Log
   error_reporting(0);
 
-  $con = mysql_connect("127.0.0.1", "root", "Fedex123");
+  $con = mysql_connect("127.0.0.1", "root", "root");
 
   if (!$con) {
     $noDatabase = true;
     die('Could not connect: ' . mysql_error());
   }
 
-  $noDatabase = !mysql_select_db("creeper", $con);
+  $noDatabase = !mysql_select_db("manolo", $con);
 
   $query = "SELECT * FROM CallTypes ORDER BY Message ASC";
   $result = mysql_query($query);
@@ -66,6 +92,7 @@
               <th>LOB</th>
               <th>Time</th>
               <th>Call Type</th>
+              <th>Agent</th>
             </tr>';
 
   while($row = mysql_fetch_array($result)){ 
@@ -75,6 +102,7 @@
               <td>' . $row['LOB'] . '</td>
               <td>' . $row['CallTime'] . '</td>
               <td>' . $row['Message'] . '</td>
+              <td>' . $agentName[$row['Agent']] . '</td>
             </tr>
       ';
   }
